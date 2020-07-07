@@ -31,7 +31,7 @@ Project is: _in progress_
 
 ## Inspiration
 
-Program powstaje ponieważ postanowiłem zrobić porządek z moimi prywatnymi zdjęciami.
+The program is created because I decided to clean up my private photos.
 
 ## Contact
 
