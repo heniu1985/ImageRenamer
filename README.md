@@ -6,7 +6,6 @@
 
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
@@ -20,10 +19,6 @@ The program will be used to retrieve the date the image was created from EXIF da
 * Python 3.6.9
 * Visual Studio Code
 * Sublime Text
-
-## Features
-
-I'll add them soon
 
 ## Status
 
