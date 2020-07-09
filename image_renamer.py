@@ -17,9 +17,9 @@ def get_photo_taken_date():
     """Function create a list whit photo taken date and time"""
 
     taken_date = []
-    for picture in pictures:
+    for picture in get_photos():
         img = Image.open(picture)
         exif = img._getexif()
-        taken_date.append(exif.get("DateTimeOriginal"))
+        taken_date.append(exif.get(36867))
 
-        return taken_date
+    return taken_date
