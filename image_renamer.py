@@ -4,22 +4,31 @@ from datetime import datetime
 from PIL import Image
 from PIL.ExifTags import TAGS
 
-def get_photos():
+def get_photos(folder_path, pics_extension):
     """Function create a list of photos from given folder"""
 
-    folder_path = input("Enter the path to the photo directory: ")
-    pics_extension = input("Enter photo extension: ")
     pics_path = folder_path + "/*." + pics_extension
 
     return glob.glob(pics_path)
 
-def get_photo_taken_date():
+def get_photos_taken_date(picture_list):
     """Function create a list whit photo taken date and time"""
 
     taken_date = []
-    for picture in get_photos():
+    for picture in picture_list:
         img = Image.open(picture)
         exif = img._getexif()
         taken_date.append(exif.get(36867))
 
     return taken_date
+
+def main():
+    """Main program function"""
+
+    path = input("Enter the path to the photo directory: ")
+    extension = input("Enter photo extension: ")
+
+    pictures = get_photos(path, extension)
+    dates = get_photos_taken_date(pictures)
+
+main()
