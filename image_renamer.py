@@ -36,6 +36,11 @@ def main():
 
     pictures = get_photos(path, extension)
     dates = get_photos_taken_date(pictures)
-    rename_photos(pictures[0], path, dates[0], extension)
+
+    if len(pictures) == len(dates):
+        for i in range(len(pictures)):
+            rename_photos(pictures[i], path, dates[i], extension)
+    else:
+        print("Not all pictures have dates!!!")
 
 main()
