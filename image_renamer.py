@@ -22,6 +22,11 @@ def get_photos_taken_date(picture_list):
 
     return taken_date
 
+def rename_photos(old_name, new_name):
+    """Function reaname photo files names to their dates"""
+
+    os.rename(old_name, new_name) # Is that function really necessary?
+
 def main():
     """Main program function"""
 
