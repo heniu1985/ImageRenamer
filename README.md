@@ -7,6 +7,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Status](#status)
+* [TO DO](#todo)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
@@ -23,6 +24,10 @@ The program will be used to retrieve the date the image was created from EXIF da
 ## Status
 
 Project is: _in progress_
+
+## TO DO
+
+1. Add condition to check if any photos was taken at this same time.
 
 ## Inspiration
 
