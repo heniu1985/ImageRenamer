@@ -7,7 +7,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Status](#status)
-* [TO DO](#todo)
+* [TO DO](#to-do)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
