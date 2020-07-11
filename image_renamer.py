@@ -22,11 +22,11 @@ def get_photos_taken_date(picture_list):
         i += 1
         try:
             if exif.get(36867) == None:
-                photos_taken_date.append(f"Brak daty - {i}")
+                photos_taken_date.append(f"No date - {i}")
             else:
                 photos_taken_date.append(exif.get(36867))
         except AttributeError:
-            photos_taken_date.append(f"Brak daty - {i}")
+            photos_taken_date.append(f"No date - {i}")
 
     return photos_taken_date
 
