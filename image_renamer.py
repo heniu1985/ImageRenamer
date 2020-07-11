@@ -15,10 +15,18 @@ def get_photos_taken_date(picture_list):
     """Function create a list whit photo taken date and time"""
 
     photos_taken_date = []
+    i = 0
     for picture in picture_list:
         img = Image.open(picture)
         exif = img._getexif()
-        photos_taken_date.append(exif.get(36867))
+        i += 1
+        try:
+            if exif.get(36867) == None:
+                photos_taken_date.append(f"Brak daty - {i}")
+            else:
+                photos_taken_date.append(exif.get(36867))
+        except AttributeError:
+            photos_taken_date.append(f"Brak daty - {i}")
 
     return photos_taken_date
 
