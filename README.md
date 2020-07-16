@@ -29,7 +29,9 @@ Project is: _in progress_
 
 ### TO DO
 
-1. Add condition to check if any photos was taken at this same time and making changes so the file names do not repeat.
+1. ~~Add condition to check if any photos was taken at this same time and making changes so the file names do not repeat.~~
+
+2. Change condition checking if the file name repeat because in second and further runs of program files with repeated names are deleting when renaming.
 
 ### Inspiration
 
