@@ -45,7 +45,7 @@ def main():
     pictures = get_photos(path, extension)
     dates = get_photos_taken_date(pictures)
 
-    if len(pictures) == len(dates):
+    if len(pictures) == len(dates) and len(dates) == len(set(dates)):
         for i in range(len(pictures)):
             rename_photos(pictures[i], path, dates[i], extension)
     else:

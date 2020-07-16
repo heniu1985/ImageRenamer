@@ -2,6 +2,8 @@
 
 > ImageRenamer
 
+__PLEASE COPY THE FOLDER WITH PHOTOS BEFORE USING THIS PROGRAM IF YOU DON'T WANT LOOSE ANY PHOTO!!!__
+
 ## Table of contents
 
 * [General info](#general-info)
