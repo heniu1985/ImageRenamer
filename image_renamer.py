@@ -19,7 +19,7 @@ def get_photos_taken_date(picture_list):
     for picture in picture_list:
         img = Image.open(picture)
         exif = img._getexif()
-        i += 1
+        i += 1 # Photo number without date
         try:
             if exif.get(36867) == None:
                 photos_taken_date.append(f"No date - {i}")
