@@ -27,7 +27,7 @@ Project is: _in progress_
 
 ## TO DO
 
-1. Add condition to check if any photos was taken at this same time.
+1. Add condition to check if any photos was taken at this same time and making changes so the file names do not repeat.
 
 ## Inspiration
 
